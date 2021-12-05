@@ -37,6 +37,7 @@ const forms = (state) => {
             statusMessage.classList.add('status');
             item.append(statusMessage);
             const formData = new FormData(item);
+            console.log(state);
             if (item.getAttribute('data-calc') === "end") {
                 for (let key in state) {
                     formData.append(key, state[key]);
